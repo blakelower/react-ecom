@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "./context";
+import propTypes from 'prop-types';
 
 export default class Product extends Component {
   render() {
@@ -46,6 +47,16 @@ export default class Product extends Component {
     );
   }
 }
+Product.propTypes = { //I used prop types to help my code know which prop is used for what. 
+  product:propTypes.shape({
+    id:propTypes.number,
+    img: propTypes.string,
+    name: propTypes.string,
+    price:propTypes.number,
+    inCart: propTypes.bool
+  }).isRequired
+}
+
 
 const ProductWrapper = styled.div`
 .card{
@@ -87,8 +98,13 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
+    transition: all 1s linear;
   }
   .img-container:hover .cart-btn{
     transform:translate(0,0)
+  }
+  .cart-btn:hover{
+    color: var(--mainPink);
+    cursor: pointer;
   }
 `;
