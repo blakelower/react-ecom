@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import Product from "./product";
 import Title from "./title";
-import { storeProducts } from "../data";
 import { ProductConsumer } from "./context";
 
 export default class Productlist extends Component {
-  state = {
-    products: storeProducts
-  };
   render() {
     return (
       <React.Fragment>
