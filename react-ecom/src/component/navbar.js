@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expands-sm bg-pink navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expands-sm navbar-dark px-sm-5">
         {/*https://cdn1.iconfinder.com/data/icons/clothes-outfit-line-shop-aholic/512/Pants-512.png */}
         {/* <Link to="/">
           <img src={logo} alt="store" className="navbar-brand"></img>
@@ -25,13 +25,21 @@ export default class Navbar extends Component {
             my cart
           </ButtonContainer>
         </Link>
-      </nav>
+      </NavWrapper>
     );
   }
 }
 
-//styled components
-const ButtonContainer = styled.button`
+const NavWrapper = styled.nav`
+  background: var(--mainPink);
+  .nav-link {
+    color: var(--mainWhite) !important;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+`;
+
+export const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.4rem;
   background: transparent;
