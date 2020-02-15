@@ -1,1 +1,2 @@
 # react-ecom
+Hi! I built this app with context api, many class/functional components, and was able to link a paypal sandbox (a dummmy sandbox for users to 'pay') I also used many class components and wrote notes all throughout my code for users to have a better understanding as to what I was doing. I used bootstrap to help with styling! Let me know what you think! 
