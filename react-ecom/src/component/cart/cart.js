@@ -5,6 +5,7 @@ import EmptyCart from "./emptycart";
 import { ProductConsumer } from "../context";
 import CartList from "./cartlist";
 import CartTotals from './carttotals'
+
 export default class Cart extends Component {
   render() {
     return (

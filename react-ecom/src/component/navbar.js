@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
 import styled from "styled-components";
 
 export default class Navbar extends Component {
   render() {
     return (
       <NavWrapper className="navbar navbar-expands-sm navbar-dark px-sm-5">
-        {/*https://cdn1.iconfinder.com/data/icons/clothes-outfit-line-shop-aholic/512/Pants-512.png */}
-        {/* <Link to="/">
-          <img src={logo} alt="store" className="navbar-brand"></img>
-        </Link> */}
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5"></li>
           <Link to="/" className="nav-link">

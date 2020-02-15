@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "./context";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 
 export default class Product extends Component {
   render() {
@@ -55,14 +55,13 @@ export default class Product extends Component {
     );
   }
 }
-Product.propTypes = {
-  //I used prop types to help my code know which prop is used for what.
-  product: propTypes.shape({
-    id: propTypes.number,
-    img: propTypes.string,
-    name: propTypes.string,
-    price: propTypes.number,
-    inCart: propTypes.bool
+Product.propTypes = { //I used prop types to help my code know which prop is used for what.
+  product:PropTypes.shape({
+    id:PropTypes.number,
+    img:PropTypes.string,
+    name:PropTypes.string,
+    price:PropTypes.number,
+    inCart: PropTypes.bool
   }).isRequired
 };
 
