@@ -9,7 +9,7 @@ export default class Navbar extends Component {
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5"></li>
           <Link to="/" className="nav-link">
-            products
+            The cutest store
           </Link>
         </ul>
         <Link to="/cart" className="ml-auto">
@@ -39,9 +39,10 @@ export const ButtonContainer = styled.button`
   font-size: 1.4rem;
   background: transparent;
   border: 0.05rem solid var(--mainPink);
-  color: ${prop => prop.cart ? "var (--mainYellow)": "var(--mainLight)"};
+  color: ${prop => (prop.cart ? "var (--mainYellow)" : "var(--mainLight)")};
   border-radius: 0.5rem;
-  border-color: ${props => (props.cart? "var (--mainYellow)" : "var (--mainLight)")};  
+  border-color: ${props =>
+    props.cart ? "var (--mainYellow)" : "var (--mainLight)"};
   padding: 0.2rem 0.5rem;
   cursor: pointer;
   margin: 0.2rem 0.5rem 0.2rem 0;
