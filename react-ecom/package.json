@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "react-ecom -d build",
-    "homepage": "https://github.com/blakelower/react-ecom.git"
+    "homepage": "https://blakelower.github.io/react-ecom/"
   },
   "eslintConfig": {
     "extends": "react-app"
